@@ -60,7 +60,11 @@ a {
 }
 
 button {
+    border: none;
+    padding: 0;
     transition: all .3s;
+    outline: transparent;
+    color: inherit;
 }
 
 img {
@@ -105,7 +109,8 @@ h6 {
     padding: 4px 15px;
     background-color: #f1f3f6;
     border-radius: 14px;
-
+    display: inline;
+    cursor: pointer;
     &+& {
         margin-left: 10px;
     }
