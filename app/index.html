@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 
 <body>
@@ -15,21 +16,25 @@
         <div class="container">
             <div class="header__wrapper">
                 <a href="#">
-                    <img class="header__logo" src="/images/logo.png" alt="logo">
+                    <img class="header__logo" src="images/logo.png" alt="logo">
                 </a>
                 <a class="header__btn" href="#">
                     Become a Seller
                 </a>
                 <div class="header__icons">
                     <a href="#">
-                        <img src="images/alarm.png" alt="alarm">
+                        <span class="lnr lnr-alarm"></span>
+                        <span class="header__icons-counter bg-red">25</span>
                     </a>
                     <a href="#">
-                        <img src="images/message.png" alt="message">
+                        <span class="header__icons-counter bg-green">6</span>
+                        <span class="lnr lnr-envelope"></span>
                     </a>
                     <a href="#">
-                        <img src="images/cart.png" alt="cart">
+                        <span class="header__icons-counter bg-blue">2</span>
+                        <span class="lnr lnr-cart"></span>
                     </a>
+                    
                 </div>
                 <div class="header__user">
                     <a class="avatar" href="#">
@@ -42,6 +47,65 @@
                         <a class="money" href="#">
                             $20.45
                         </a>
+                    </div>
+                    <div class="header__drop-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-user"></span>
+                                    Profile Page</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-home"></span>
+                                    Account Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-cog"></span>
+                                    Your Purchases</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-cart"></span>
+                                    Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-heart"></span>
+                                    Your Favorites</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-dice"></span>
+                                    Add Credits</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-chart-bars"></span>
+                                    Sales Statements</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-upload"></span>
+                                    Upload Item</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-book"></span>
+                                    Edit Item</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-briefcase"></span>
+                                    Withdrawals</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="lnr lnr-exit"></span>
+                                    Logout</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -145,16 +209,16 @@
                 <div class="slider__switch top-box">
                     <h2>Weekly Featured Products</h2>
                     <div class="slider__box-btn">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev sbp slider-btn-prev"></div>
+                        <div class="swiper-button-next sbn slider-btn-next"></div>
                     </div>
                 </div>
 
-                <div class="swiper-container">
+                <div class="swiper-container slider-one-cart">
                     <div class="swiper-wrapper">
                         <div class="slider__item swiper-slide">
                             <div class="slider__item-img">
-                                <img src="images/wordpress.jpg" alt="">
+                                <img src="images/ava2.jpg" alt="">
                             </div>
                             <div class="slider__item-info">
                                 <h2 class="slider__item-title" .slider__item-title>
@@ -203,11 +267,11 @@
                                         $10 - $50
                                     </a>
                                     <a class="slider__item-icon" href="#">
-                                        <img class="slider__item-box-icon" src="/images/cart.png" alt=""></img>
+                                        <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
                                         <span>46</span>
                                     </a>
                                     <a class="slider__item-icon" href="#">
-                                        <img class="slider__item-box-icon" src="/images/heart.png" alt=""></img>
+                                        <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
                                         <span>634</span>
                                     </a>
                                 </div>
@@ -215,10 +279,10 @@
                         </div>
                         <div class="slider__item swiper-slide">
                             <div class="slider__item-img">
-                                <img src="images/wordpress.jpg" alt="">
+                                <img src="images/ava3.jpg" alt="">
                             </div>
                             <div class="slider__item-info">
-                                <h2 class="slider__item-title" .slider__item-title>
+                                <h2 class="slider__item-title">
                                     One Page Resume Template
                                 </h2>
                                 <div class="slider__item-company">
@@ -300,70 +364,1268 @@
                 </div>
                 <div class="release__btn">
                     <ul>
-                        <li class="tag-btn"><button>Plugins</button></li>
-                        <li class="tag-btn"><button>WordPress</button></li>
-                        <li class="tag-btn"><button>Site Template</button></li>
-                        <li class="tag-btn"><button>PSD Template</button></li>
-                        <li class="tag-btn"><button>Joomla</button></li>
-                        <li class="tag-btn"><button>User Interface</button></li>
-                        <li class="tag-btn"><button>Landing Page</button></li>
-                        <li class="tag-btn"><button>Software</button></li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-plugins">Plugins</button></li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-wordpress">WordPress</button>
+                        </li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-site-template">Site
+                                Template</button></li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-psd">PSD Template</button></li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-joomla">Joomla</button></li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-user">User Interface</button>
+                        </li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-landing">Landing Page</button>
+                        </li>
+                        <li class="tag-btn"><button type="button" data-filter=".category-software">Software</button>
+                        </li>
                     </ul>
                 </div>
+                <div class="release__cart">
+                    <div class="slider__item cart mix category-wordpress" data-order="1">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
 
-                <div class="slider__item cart">
-                    <div class="slider__item-img">
-                        <img src="images/bg_copy_green.png" alt="">
-                    </div>
-                    <div class="slider__item-info">
-                        <h2 class="slider__item-title">
-                            E-commerce Shopping Cart
-                        </h2>
-                        <div class="slider__item-company">
-                            <a href="#" class="slider__company-author">
-                                <div class="slider__company-img">
-                                    <img src="images/ava.jpg" alt="">
-                                </div>
-                                AazzTech
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
                             </a>
-                            <a href="#" class="slider__company-tag">
-                                <div class="slider__company-img">
-                                    <img src="images/forma.png" alt="">
-                                </div>
-                                WordPress
+
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
                             </a>
                         </div>
-                        <p class="slider__item-text">
+
+                    </div>
+                    <div class="slider__item cart mix category-site-template" data-order="2">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
+
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
+                            </a>
+
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="slider__item cart mix category-psd" data-order="3">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <div class="rate-star"></div>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item cart mix category-joomla" data-order="4">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <div class="rate-star"></div>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item cart mix category-user" data-order="5">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item cart mix category-landing" data-order="6">
+                        <div class="slider__item-img">
+                            <img src="images/bg_copy_green.png" alt="">
+                            <div class="slider__item-hover">
+                                <a class="blue__btn" href="#">More Info</a>
+                                <a class="blue__btn" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <h2 class="slider__item-title">
+                                E-commerce Shopping Cart
+                            </h2>
+                            <div class="slider__item-company">
+                                <a href="#" class="slider__company-author">
+                                    <div class="slider__company-img">
+                                        <img src="images/ava.jpg" alt="">
+                                    </div>
+                                    AazzTech
+                                </a>
+                                <a href="#" class="slider__company-tag">
+                                    <div class="slider__company-img">
+                                        <img src="images/forma.png" alt="">
+                                    </div>
+                                    WordPress
+                                </a>
+                            </div>
+                            <p class="slider__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the
+                                mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            </p>
+                        </div>
+                        <div class="slider__item-sold">
+                            <a class="slider__item-soldbtn" href="#">
+                                $20
+                            </a>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                <span>634</span>
+                            </a>
+                            <div class="rate-star"></div>
+                            <a class="slider__item-icon" href="#">
+                                <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                <span>46</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="release__btn-all" type="button" data-filter="all">
+                    All New Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-cart">
+        <div class="container">
+            <div class="slider-cart__wrapper">
+                <div class="slider-cart__switch top-box">
+                    <h2>Weekly Featured Products</h2>
+                    <div class="slider__box-btn">
+                        <div class="swiper-button-prev sbp slider-cart-btn-prev"></div>
+                        <div class="swiper-button-next sbn slider-cart-btn-next"></div>
+                    </div>
+                </div>
+                <div class="swiper-container slider-swiper-cart">
+                    <div class="swiper-wrapper">
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <div class="rate-star"></div>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <div class="rate-star"></div>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item cart swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                                <div class="slider__item-hover">
+                                    <a class="blue__btn" href="#">More Info</a>
+                                    <a class="blue__btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    E-commerce Shopping Cart
+                                </h2>
+                                <div class="slider__item-company">
+                                    <a href="#" class="slider__company-author">
+                                        <div class="slider__company-img">
+                                            <img src="images/ava.jpg" alt="">
+                                        </div>
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="slider__company-tag">
+                                        <div class="slider__company-img">
+                                            <img src="images/forma.png" alt="">
+                                        </div>
+                                        WordPress
+                                    </a>
+                                </div>
+                                <p class="slider__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra,
+                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="slider__item-sold">
+                                <a class="slider__item-soldbtn" href="#">
+                                    $20
+                                </a>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/heart.png" alt=""></img>
+                                    <span>634</span>
+                                </a>
+                                <div class="rate-star"></div>
+                                <a class="slider__item-icon" href="#">
+                                    <img class="slider__item-box-icon" src="images/cart.png" alt=""></img>
+                                    <span>46</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-info">
+        <div class="container">
+            <div class="site-info__wrapper">
+                <div class="site-info__items site-info__items--yellow">
+                    <span class="lnr lnr-briefcase"></span>
+                    <p class="site-info__number">
+                        38436
+                    </p>
+                    <p class="site-info__text">
+                        items for sale
+                    </p>
+                </div>
+                <div class="site-info__items site-info__items--blue">
+                    <span class="lnr lnr-cloud-download"></span>
+                    <p class="site-info__number">
+                        3736
+                    </p>
+                    <p class="site-info__text">
+                        total sales
+                    </p>
+                </div>
+                <div class="site-info__items site-info__items--green">
+                    <span class="lnr lnr-smile"></span>
+                    <p class="site-info__number">
+                        2736
+                    </p>
+                    <p class="site-info__text">
+                        happy customers
+                    </p>
+                </div>
+                <div class="site-info__items site-info__items--red">
+                    <span class="lnr lnr-users"></span>
+                    <p class="site-info__number">
+                        25736
+                    </p>
+                    <p class="site-info__text">
+                        members
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-info">
+        <div class="container">
+            <div class="produst-info__wrapper">
+                <div class="product-info__title">
+                    <h2>
+                        Why Choose <span>MartPlace</span>
+                    </h2>
+                    <p>
+                        Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats.
+                        Lid est laborum dolo rumes fugats untras.
+                    </p>
+                </div>
+                <div class="product-info__item">
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-license text-blue"></span>
+                        <h2>
+                            One Time Payment
+                        </h2>
+                        <p>
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the
-                            mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                            pharetra,
-                            justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the
-                            mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                            pharetra,
-                            justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
                         </p>
                     </div>
-
-                    <div class="slider__item-sold">
-                        <a class="slider__item-soldbtn" href="#">
-                            $20
-                        </a>
-                        
-                        <a class="slider__item-icon" href="#">
-                            <img class="slider__item-box-icon" src="/images/heart.png" alt=""></img>
-                            <span>634</span>
-                        </a>
-                        <a class="slider__item-icon" href="#">
-                            <img class="slider__item-box-icon" src="/images/cart.png" alt=""></img>
-                            <span>46</span>
-                        </a>
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-magic-wand text-purple"></span>
+                        <h2>
+                            Quality Products
+                        </h2>
+                        <p>
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
                     </div>
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-lock text-green"></span>
+                        <h2>
+                            100% Secure Payment
+                        </h2>
+                        <p>
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-chart-bars text-orange"></span>
+                        <h2>
+                            Well Organized Code
+                        </h2>
+                        <p>
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-leaf text-light-blue"></span>
+                        <h2>
+                            Life Time Free Update
+                        </h2>
+                        <p>
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                    <div class="product-info__cart">
+                        <span class="lnr lnr-phone text-red"></span>
+                        <h2>
+                            Fast and Friendly Support
+                        </h2>
+                        <p>
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop">
+        <div class="shop__wraper">
+            <div class="shop__sell">
+                <img class="shop__img-sell" src="images/sell.png" alt="sell">
+                <h2 class="shop__title-sell">
+                    Sell Your Products
+                </h2>
+                <p class="shop__text-sell">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                </p>
+                <a href="#" class="shop__btn-sell blue__btn">
+                    Become an Author
+                </a>
+            </div>
+            <div class="shop__buy">
+                <img class="shop__img-buy" src="images/buy.png" alt="buy">
+                <h2 class="shop__title-sell">
+                    Start Shopping Today
+                </h2>
+                <p class="shop__text-buy">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                </p>
+                <a href="#" class="shop__btn-buy blue__btn">
+                    Start Shopping
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="feedback__title">
+                    <h2>
+                        Our Clients <span>Feedback</span>
+                    </h2>
+                    <p>
+                        Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats.
+                        Lid est laborum dolo rumes fugats untras.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="feedback__inner-cart swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Taofiqul Hakim
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Saifullah Al Murtafee
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi
+                                    interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Taofiqul Hakim
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Saifullah Al Murtafee
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi
+                                    interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Taofiqul Hakim
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                            <div class="feedback__cart swiper-slide">
+                                <div class="feedback__cart-item">
+                                    <img src="images/ava.jpg" alt="avatar">
+                                    <div class="info-author">
+                                        <h3 class="feedback__author">
+                                            Saifullah Al Murtafee
+                                        </h3>
+                                        <p class="feedback__worker">
+                                            Product Designer
+                                        </p>
+                                    </div>
+                                    <span class="lnr lnr-bubble feedback__icon"></span>
+                                </div>
+                                <p class="feedback__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is
+                                    id
+                                    nisi
+                                    interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev feedback__btn-prev"></div>
+                    <div class="swiper-button-next feedback__btn-next"></div>
+                </div>
+                <button class="feedback__btn release__btn-all">
+                    View All Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__wrapper">
+                <div class="blog__title feedback__title">
+                    <h2>
+                        Latest <span>News</span>
+                    </h2>
+                    <p>
+                        Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats.
+                        Lid est laborum dolo rumes fugats untras.
+                    </p>
+                </div>
+                <div class="blog__wrapper-cart">
+                    <div class="blog__cart">
+                        <div class="blog__item cart">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    Web Design Trends in 2017
+                                </h2>
+                                <p class="slider__item-text blog__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </p>
+                            </div>
+
+                            <div class="blog__cart-footer">
+                                <div class="blog__footer-date">
+                                    <span class="lnr lnr-clock footer-date text-blue"></span>
+                                    24 Feb 2017
+                                </div>
+                                <div class="blog__footer-comments">
+                                    <span class="lnr lnr-bubble"></span>
+                                    <span>45</span>
+                                </div>
+                                <div class="blog__footer-views">
+                                    <span class="lnr lnr-eye"></span>
+                                    <span>345</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item cart">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    The best advices to start your own project
+                                </h2>
+                                <p class="slider__item-text blog__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                </p>
+                            </div>
+
+                            <div class="blog__cart-footer">
+                                <div class="blog__footer-date">
+                                    <span class="lnr lnr-clock footer-date text-blue"></span>
+                                    24 Feb 2017
+                                </div>
+                                <div class="blog__footer-comments">
+                                    <span class="lnr lnr-bubble"></span>
+                                    <span>45</span>
+                                </div>
+                                <div class="blog__footer-views">
+                                    <span class="lnr lnr-eye"></span>
+                                    <span>345</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item cart">
+                            <div class="slider__item-img">
+                                <img src="images/bg_copy_green.png" alt="">
+                            </div>
+                            <div class="slider__item-info">
+                                <h2 class="slider__item-title">
+                                    Best Related Post Plugin
+                                </h2>
+                                <p class="slider__item-text blog__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </p>
+                            </div>
+
+                            <div class="blog__cart-footer">
+                                <div class="blog__footer-date">
+                                    <span class="lnr lnr-clock footer-date text-blue"></span>
+                                    24 Feb 2017
+                                </div>
+                                <div class="blog__footer-comments">
+                                    <span class="lnr lnr-bubble"></span>
+                                    <span>45</span>
+                                </div>
+                                <div class="blog__footer-views">
+                                    <span class="lnr lnr-eye"></span>
+                                    <span>345</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee__wrapper">
+                <div class="guarantee__item">
+                    <img src="images/icon1.png" alt="guarantee">
+                    <p class="guarantee__span-color-blue">
+                        30 Days Money Back <span>Guarantee</span>
+                    </p>
+                </div>
+                <div class="guarantee__item">
+                    <img src="images/icon2.png" alt="guarantee">
+                    <p class="guarantee__span-color-purple">
+                        Fast and Friendly <span>Support</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+            <div class="join__wrapper">
+                <h2 class="join__title">
+                    Ready to Join Our Marketplace!
+                </h2>
+                <p class="join__text">
+                    Over 25,000 designers and developers trust the MartPlace.
+                </p>
+                <a class="join__btn" href="#">
+                    Join Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__contact">
+                    <div class="footer__contact-logo">
+                        <img class="footer__contact-img" src="images/footer-logo.png" alt="logo">
+                    </div>
+                    <p class="footer__contact-text">
+                        Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the
+                        mattis, leo quam.
+                    </p>
+                    <div class="footer__contact-item">
+
+                        <p class="footer__contact-phone">
+                            <span class="lnr lnr-phone-handset"></span>
+                            <span>Phone: +6789-875-2235</span>
+                        </p>
+                        <p class="footer__contact-mail">
+                            <span class="lnr lnr-envelope"></span>
+                            <span>Support@aazztech.com</span>
+                        </p>
+                        <p class="footer__contact-adress">
+                            <span class="lnr lnr-map-marker"></span>
+                            <span>202 New Hampshire Avenue
+                                Northwest #100, New York-2573</span>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <div class="footer__company">
+                    <h3 class="footer__title">
+                        Our Company
+                    </h3>
+                    <ul class="footer__company-item">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Work</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Copyright Notice</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__help">
+                    <h3 class="footer__title">
+                        Help Support
+                    </h3>
+                    <ul class="footer__help-item">
+                        <li><a href="#">Support Forum</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Support Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Buyers Faq</a></li>
+                        <li><a href="#">Sellers Faq</a></li>
+                    </ul>
+                </div>
+                <div class="footer__news">
+                    <h3 class="footer__title">
+                        Newsletter
+                    </h3>
+                    <p class="footer__news-text">
+                        Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                    </p>
+                    <form class="footer__news-form" action="">
+                        <input class="footer__news-input" placeholder="Enter email" type="text" name="" id="">
+                        <button class="footer__news-btn">
+                            Submit
+                        </button>
+                    </form>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_facebook.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_twitter.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_g.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_pint.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_in.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon_ball.png" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
+        </div>
+        <div class="footer__copy">
+            ©2017 <a href="#">MartPlace.</a> All rights reserved. Created by <a href="#">AazzTech</a>
         </div>
     </section>
 

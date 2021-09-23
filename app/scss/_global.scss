@@ -65,6 +65,7 @@ button {
     transition: all .3s;
     outline: transparent;
     color: inherit;
+    cursor: pointer;
 }
 
 img {
@@ -111,7 +112,84 @@ h6 {
     border-radius: 14px;
     display: inline;
     cursor: pointer;
+
     &+& {
         margin-left: 10px;
     }
+}
+.sbp:after,
+.sbn:after {
+    font-size: 14px;
+    color: #fff;
+}
+.sbn,
+.sbp {
+    width: 50%;
+    background-color: #7347c1;
+}
+.sbn {
+    right: 0;
+}
+.sbp {
+    left: 0;
+}
+.slider-cart-btn-prev,
+.slider-cart-btn-next{
+    background-color: #0674ec;
+}
+
+//text-color
+
+.text-blue {
+    color: #0674ec;
+}
+
+.text-purple {
+    color: #7f4ec2;
+}
+
+.text-green {
+    color: #77de51;
+}
+
+.text-orange {
+    color: #feb71d;
+}
+
+.text-light-blue {
+    color: #58c9e9;
+}
+
+.text-red {
+    color: #ff6a6d;
+}
+
+//background-color
+
+.bg-blue {
+    background-color: #0674ec;
+}
+
+.bg-purple {
+    background-color: #7f4ec2;
+}
+
+.bg-green {
+    background-color: #77de51;
+}
+
+.bg-orange {
+    background-color: #feb71d;
+}
+
+.bg-light-blue {
+    background-color: #58c9e9;
+}
+
+.bg-red {
+    background-color: #ff6a6d;
+}
+
+.relative{
+    position: relative;
 }
